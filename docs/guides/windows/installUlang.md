@@ -5,3 +5,6 @@ Rufus menawarkan opsi untuk melewati persyaratan Internet dan Akun Microsoft unt
 1. Saat Anda melihat layar "Mari sambungkan Anda ke jaringan",
 2. Tekan Shift + F10 untuk membuka command prompt.
 3. Ketik `start ms-cxh:localonly` dan tekan Enter.
+
+
+Done
