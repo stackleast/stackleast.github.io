@@ -14,7 +14,7 @@ Kami merekomendasikan penggunaan **Office Tool Plus** karena memberikan kontrol 
 
 | Tool | Deskripsi |
 | :--- | :--- |
-| [**Office Tool Plus**](./office-tool) | Tool all-in-one untuk mendownload, menginstall, dan mengaktifkan Office. (**Rekomendasi**) |
+| [**Office Tool Plus**](./office-tools.md) | Tool all-in-one untuk mendownload, menginstall, dan mengaktifkan Office. (**Rekomendasi**) |
 | Script KMS | Script tradisional untuk aktivasi Office yang sudah terinstall. |
 
 ## ⚠️ Prasyarat dan Peringatan
@@ -26,4 +26,4 @@ Kami merekomendasikan penggunaan **Office Tool Plus** karena memberikan kontrol 
 ---
 
 **Pilih panduan untuk melanjutkan:**
-- [Aktivasi menggunakan Office Tool Plus](./office-tool)
+- [Aktivasi menggunakan Office Tool Plus](../office/)

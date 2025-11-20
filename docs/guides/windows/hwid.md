@@ -46,6 +46,6 @@ Setelah restart, verifikasi bahwa Windows Anda telah teraktivasi secara permanen
 ### Aktivasi Gagal
 - Pastikan Anda terhubung ke internet.
 - Pastikan Anda menjalankan tool sebagai **Administrator**.
-- Jika gagal, coba gunakan metode [KMS](../kmspico) terlebih dahulu, lalu jalankan lagi tool HWID ini.
+- Jika gagal, coba gunakan metode [KMS](./kmspico.md) terlebih dahulu, lalu jalankan lagi tool HWID ini.
 
 [← Kembali ke Overview Aktivasi Windows](../windows/)
