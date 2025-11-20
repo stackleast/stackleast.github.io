@@ -1,0 +1,95 @@
+import { defineConfig } from 'vitepress'
+import markdownItMermaid from '@markslides/markdown-it-mermaid';
+
+// https://vitepress.dev/reference/site-config
+export default defineConfig({
+  title: "Stackless",
+  description: "A comprehensive resource for Windows and Office activation guides and tools",
+  lang: 'id-ID',
+  lastUpdated: true,
+  appearance: 'dark',
+  head: [
+    ['link',{ rel: 'icon', href: '/assets/images/logo.svg'}],
+  ],
+  themeConfig: {
+    // https://vitepress.dev/reference/default-theme-config
+    logo: '/assets/images/logo.svg',
+    search: {
+      provider: 'local',
+    },
+    nav: [
+      { text: 'Home', link: '/' },
+      { 
+        text: 'Guides',
+        items: [
+          { text: 'Instal Ulang Windows', link: '/guides/windows/installUlang' },
+          { text: 'Windows Activation', link: '/guides/windows/' },
+          { text: 'Office Activation', link: '/guides/office/' },
+          { text: 'Other Software', link: '/guides/other/' }
+        ] 
+      },
+      { text: 'Verification', link: '/verification/' },
+      { text: 'Community', link: '/community/' },
+      { text: 'About', link: '/about/' }
+    ],
+
+    sidebar: {
+      '/guides/windows/': [
+        {
+          text: 'Windows Activation',
+          items: [
+            { text: 'Overview', link: '/guides/windows/' },
+            { text: 'Instal Ulang Windows', link: '/guides/windows/installUlang' },
+            { text: 'KMS-Based Activation', link: '/guides/windows/kmspico' },
+            { text: 'HWID Activation', link: '/guides/windows/hwid' }
+          ]
+        }
+      ],
+      '/guides/office/': [
+        {
+          text: 'Office Activation',
+          items: [
+            { text: 'Overview', link: '/guides/office/' },
+            { text: 'Using Office Tool', link: '/guides/office/office-tool' }
+          ]
+        }
+      ],
+      '/guides/other/': [
+        {
+          text: 'Other Software Activation',
+          items: [
+            { text: 'Overview', link: '/guides/other/' },
+            { text: 'Windows Server', link: '/guides/other/windows-server' },
+            { text: 'Adobe Creative Cloud', link: '/guides/other/adobe' },
+            { text: 'VMware Workstation', link: '/guides/other/vmware' },
+            { text: 'JetBrains IDE', link: '/guides/other/jetbrains' }
+          ]
+        }
+      ],
+      '/verification/': []
+    },
+
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/gravesoft/gravesoft.dev' }
+    ],
+    // Footer (Opsional)
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2025 Stackless.dev'
+    },
+
+    // Outline pada sidebar kanan (Daftar Isi)
+    outline: {
+      level: [2, 3],
+      label: 'On this page'
+    }
+  },
+
+  // Markdown Configuration
+  markdown: {
+    lineNumbers: true,
+    config: (md) => {
+      md.use(markdownItMermaid); 
+    }
+  }
+})
