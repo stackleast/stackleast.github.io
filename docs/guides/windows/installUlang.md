@@ -7,4 +7,4 @@ Rufus menawarkan opsi untuk melewati persyaratan Internet dan Akun Microsoft unt
 3. Ketik `start ms-cxh:localonly` dan tekan Enter.
 
 
-Done
+Selesai
