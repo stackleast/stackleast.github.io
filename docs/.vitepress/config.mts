@@ -1,18 +1,23 @@
+// config.mts
 import { defineConfig } from 'vitepress'
 import markdownItMermaid from '@markslides/markdown-it-mermaid';
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Stackless",
   description: "A comprehensive resource for Windows and Office activation guides and tools",
   lang: 'id-ID',
   lastUpdated: true,
   appearance: 'dark',
+  
+  // 🔥 PERBAIKAN PENTING: Base URL untuk GitHub Pages
+  base: '/', // Untuk user site (username.github.io)
+  
   head: [
     ['link',{ rel: 'icon', href: '/assets/images/logo.svg'}],
   ],
+  
+  // ... rest of your config tetap sama
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     logo: '/assets/images/logo.svg',
     search: {
       provider: 'local',
@@ -70,22 +75,20 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/gravesoft/gravesoft.dev' }
+      { icon: 'github', link: 'https://github.com/stackleast/stackleast.github.io' } // 🔥 Update dengan repo yang benar
     ],
-    // Footer (Opsional)
+    
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2025 Stackless.dev'
     },
 
-    // Outline pada sidebar kanan (Daftar Isi)
     outline: {
       level: [2, 3],
       label: 'On this page'
     }
   },
 
-  // Markdown Configuration
   markdown: {
     lineNumbers: true,
     config: (md) => {
